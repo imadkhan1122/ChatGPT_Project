@@ -182,7 +182,7 @@ class GET_DATA(SendRequest):
                         TITLE = self.getUniTitle(l['Title'])
                         desc, meta_data = self.getDesAndMeta(l['Title'])
                         if TITLE and desc and meta_data:
-                            lst = lst = [l["Handle"], l['Title'], TITLE, desc, meta_data, '']
+                            lst = [l["Handle"], l['Title'], TITLE, desc, meta_data, '']
                             csv_writer.writerow(lst)
                             print('Row Added')
                         else:
